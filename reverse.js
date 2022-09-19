@@ -8,10 +8,8 @@ const reverseString = function(str) {
   return newString;
 };
 const reverse = function(array) {
-  let string = "";
   for (x = 2; x < array.length; x++) {
-    string = reverseString(array[x]);
-    console.log(string);
+    console.log(reverseString(array[x]));
   }
 };
 
