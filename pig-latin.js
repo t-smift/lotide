@@ -1,8 +1,8 @@
 const args = process.argv;
 const pigString = function(str) {
-  let pigLatin = ""
-  let tail = str.slice(1)
-  pigLatin = tail + str[0] + "ay"
+  let pigLatin = "";
+  let tail = str.slice(1);
+  pigLatin = tail + str[0] + "ay";
   return pigLatin;
 };
 const pigLatin = function(array) {
@@ -10,4 +10,4 @@ const pigLatin = function(array) {
     console.log(pigString(array[x]));
   }
 };
-console.log(pigLatin(args))
+console.log(pigLatin(args));
