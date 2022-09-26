@@ -1,17 +1,13 @@
-const args = process.argv;
+// const args = process.argv;
+const reverseString = require('reverseString');
 
-const reverseString = function(str) {
-  let newString = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    newString += str[i];
-  }
-  return newString;
-};
 const reverse = function(array) {
   for (x = 2; x < array.length; x++) {
     console.log(reverseString(array[x]));
   }
 };
 
-console.log(reverse(args));
+// console.log(reverse(args));
+// created to work with command line arguments, change x to 0 for reversing inputted array
+module.exports = reverse;
 
