@@ -14,22 +14,34 @@ const findKey = require('./findKey');
 const eqObjects = require('./eqObjects');
 const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
+const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertObjectsEqual= require('./assertObjectsEqual');
 
-module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  without: without,
-  takeUntil: takeUntil,
-  reverseString: reverseString,
-  reverse: reverse,
-  pigString: pigString,
-  pigLatin: pigLatin,
-  letterPosition: letterPosition,
-  flatten: flatten,
-  findKeyByValue: findKeyByValue,
-  findKey: findKey,
-  eqObjects: eqObjects,
-  countOnly: countOnly,
-  countLetters: countLetters
+const lotide = {
+  head,
+  tail,
+  middle,
+  without,
+  takeUntil,
+  reverseString,
+  reverse,
+  pigString,
+  pigLatin,
+  letterPosition,
+  flatten,
+  findKey,
+  findKeyByValue,
+  eqObjects,
+  eqArrays,
+  assertEqual,
+  assertArraysEqual,
+  countOnly,
+  countLetters,
+  assertObjectsEqual
 };
+
+console.log(lotide)
+
+module.exports = lotide

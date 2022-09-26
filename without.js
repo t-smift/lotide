@@ -10,11 +10,11 @@ const without = function(source, itemsToRemove) {
   }
   return result;
 };
-console.log(without(["1", "2", "3"], [1, "2", "3"]))
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-assertArraysEqual(without([1, 2, 3, 1, 2, 3], [1, 2]), [3, 3]);
-assertArraysEqual(without([1, 2, 3, 1, 2, 3], [1]), [2, 3, 2, 3]);
+// console.log(without(["1", "2", "3"], [1, "2", "3"]))
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// assertArraysEqual(without([1, 2, 3, 1, 2, 3], [1, 2]), [3, 3]);
+// assertArraysEqual(without([1, 2, 3, 1, 2, 3], [1]), [2, 3, 2, 3]);
 
 module.exports = without;

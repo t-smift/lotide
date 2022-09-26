@@ -1,5 +1,5 @@
 // const args = process.argv;
-const reverseString = require('reverseString');
+const reverseString = require('./reverseString');
 
 const reverse = function(array) {
   for (x = 2; x < array.length; x++) {
