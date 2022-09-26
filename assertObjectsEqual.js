@@ -2,7 +2,7 @@ var eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
-  for (x = 0; x < arr1.length; x++) {
+  for (x = 0; x < arr1.length; x++) {ß
     if (arr1[x] !== arr2[x]) {
       return false;
     }
@@ -28,8 +28,10 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
     console.log(`👏👏👏 Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
-  } else console.log(`❌ ❌ ❌ Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
-};
+  } else {
+    console.log(`❌ ❌ ❌ Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);    
+  }
+}
 
 
 const ab = { a: "1", b: "2"};
@@ -46,4 +48,4 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 // assertEqual(eqObjects(cd, dc), true); // => true
 // assertEqual(eqObjects(cd, cd2), false); // => false)
 assertObjectsEqual(ab, ba)
-assertObjectsEqual(cd, dc)
+assertObjectsEqual(cd, cd2)

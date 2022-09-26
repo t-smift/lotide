@@ -19,15 +19,20 @@ const assertArraysEqual = function(actual, expected) {
 
 const middle = function(array) {
   let midEle = [];
-  if (array.length <= 2) {
+  let chars = array.length
+  if (chars <= 2) {
     midEle = [];
   }
-  if (array.length > 2 && array.length % 2 !== 0) {
-    midEle = array[Math.floor(array.length / 2)];
+  if (chars > 2 && chars % 2 !== 0) {
+    midEle = array[Math.floor(chars / 2)];
   }
-  if (array.length > 2 && array.length % 2 === 0) {
-    midEle = array.slice((array.length / 2 - 1),(array.length / 2 + 1));
+  if (chars > 2 && chars % 2 === 0) {
+    midEle = array.slice((chars / 2 - 1),(chars / 2 + 1));
   }
   return midEle;
 };
+console.log(middle([1]));
+console.log(middle([]));
+console.log(middle([1, 2, 3]));
 console.log(middle([1, 2, 3, 4, 5]));
+console.log(middle([1, 2, 3, 4, 5, 6, 7, 8]));

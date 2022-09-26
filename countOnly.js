@@ -14,6 +14,7 @@ const countOnly = function(allItems, itemsToCount) {
         counted[item] = 1;
       }
     }  
+    // implied action for if the item DOES exist in itemsToCount, but the value is set to false. Nothing happens
   }  
   return counted;
 }
